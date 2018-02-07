@@ -1,0 +1,66 @@
+{
+  "extends": [
+    "tslint:recommended",
+    "tslint-react"
+  ],
+  "rules": {
+    "arrow-parens": false,
+    "interface-name": [
+      true,
+      "never-prefix"
+    ],
+    "jsx-boolean-value": false,
+    "jsx-no-multiline-js": false,
+    "max-line-length": false,
+    "member-access": false,
+    "no-shadowed-variable": [
+      true,
+      {
+        "function": false
+      }
+    ],
+    "no-var-requires": false,
+    "object-literal-sort-keys": false,
+    "quotemark": [
+      true,
+      "single",
+      "jsx-double",
+      "avoid-escape",
+      "avoid-template"
+    ],
+    "semicolon": [
+      true,
+      "never"
+    ],
+    "trailing-comma": [
+      true,
+      {
+        "multiline": "never",
+        "singleline": "never"
+      }
+    ]
+  },
+  "jsRules": {
+    "arrow-parens": false,
+    "max-line-length": false,
+    "object-literal-sort-keys": false,
+    "quotemark": [
+      true,
+      "single",
+      "jsx-double",
+      "avoid-escape",
+      "avoid-template"
+    ],
+    "semicolon": [
+      true,
+      "never"
+    ],
+    "trailing-comma": [
+      true,
+      {
+        "multiline": "never",
+        "singleline": "never"
+      }
+    ]
+  }
+}
