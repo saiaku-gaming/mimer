@@ -1,11 +1,12 @@
-import { AuthKeys, AuthActionTypes } from '../../actions/authActions'
+import { AnyAction } from 'redux'
+import { AuthKeys } from '../../actions/authActions'
 
 interface State {
   auth: boolean
   role: string | null
 }
 
-const authReducer = (state: State = { auth: false, role: null }, action: AuthActionTypes): State => {
+const authReducer = (state: State = { auth: false, role: null }, action: AnyAction): State => {
   switch (action.type) {
     case AuthKeys.LOGIN:
       return { auth: action.auth, role: action.role }

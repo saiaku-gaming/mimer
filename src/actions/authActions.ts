@@ -14,8 +14,6 @@ export interface LogoutAction {
   auth: boolean
 }
 
-export type AuthActionTypes = LoginAction | LogoutAction
-
 export const login = (username: string, password: string): LoginAction => {
   return { type: AuthKeys.LOGIN, auth: true, role: 'admin' }
 }
