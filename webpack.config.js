@@ -20,8 +20,9 @@ module.exports = {
   },
   module: {
     loaders: [
-      { test: /\.tsx?$/, loader: 'ts-loader' },
-      { test: /\.json$/, loader: 'json' }
+      { test: /\.tsx?$/, loader: ['ts-loader'] },
+      { test: /\.json$/, loader: 'json' },
+      { test: /\.scss$/, loader: ['style-loader', 'css-loader?modules&sourceMap&localIdentName=[local]__[hash:base64:5]', 'sass-loader?outputStyles=expanded&sourceMap'] }
     ]
   }
 };
