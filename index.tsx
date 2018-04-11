@@ -11,6 +11,7 @@ import createHistory from 'history/createHashHistory'
 import App from './src/app/App'
 import LoginScreen from './src/app/containers/login/LoginScreen'
 import Navbar from './src/app/containers/navbar/Navbar'
+import UserListScreen from './src/app/containers/userlist/UserListScreen'
 import authReducer from './src/redux/reducers/authReducer'
 
 const history = createHistory({
@@ -37,6 +38,7 @@ const renderApp = () => {
             <Redirect exact from="/" to="/home" />
             <Route path="/home" component={App} />
             <Route path="/login" component={LoginScreen} />
+            <Route path="/userlist" component={UserListScreen} />
           </Switch>
         </div>
       </ConnectedRouter>

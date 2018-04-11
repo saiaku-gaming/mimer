@@ -13,6 +13,9 @@ class Navbar extends React.Component {
         <li className={styles.navbarItem}>
           <a className={styles.navbarLink} href="#login">Login</a>
         </li>
+        <li className={styles.navbarItem}>
+          <a className={styles.navbarLink} href="#userlist">User List</a>
+        </li>
       </ul>
     )
   }
