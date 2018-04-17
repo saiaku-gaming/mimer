@@ -1,14 +1,18 @@
-.bakgrund {
-  background: rgb(221, 221, 221);
+.background {
+  background: rgb(255, 255, 255);
   text-align: left;
   height: 130px;
   width: 350px;
 }
 
-.tjena {
+.blevel{
+  text-align: center;
+  margin-top: 60px;
+}
+
+.level {
   color: rgba(77, 77, 77, 0.933);
-  font-size: 20px;
-  margin-left: 30px;
+  font-size: 15px;
 }
 
 .user {
@@ -17,9 +21,17 @@
 }
 
 .namn {
-  color: #292929;
+  color: #1d1d1d;
   font-size: 20px;
   margin-left: 2px;
-  /*display: block;
-  margin-bottom: 70px;*/
+}
+
+.selectbackground {
+    background: rgb(238, 238, 238);
+    text-align: left;
+    height: 130px;
+    width: 350px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #bdbdbd;
 }
